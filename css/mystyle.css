@@ -1,0 +1,394 @@
+@font-face {
+    font-family: Lobster;
+    src: url("/css/fonts/Lobster_1.3.otf");
+  }
+
+@font-face {
+    font-family: Amsterdam;
+    src: url("/css/fonts/Amsterdam.ttf")
+}
+
+@font-face {
+    font-family: Arizonia-Regular;
+    src: url("/css/fonts/Arizonia-Regular.ttf.ttf")
+}
+
+@font-face {
+    font-family: BeautifulPeoplePersonalUse-d;
+    src: url("/css/fonts/BeautifulPeoplePersonalUse-dE0g.ttf")
+}
+
+/* -- --*/
+@font-face {
+    font-family: BeautifulPeoplePersonalUse-p;
+    src: url("/css/fonts/BeautifulPeoplePersonalUse-PYP2.ttf")
+}
+
+@font-face {
+    font-family: BeautyMountains;
+    src: url("/css/fonts/BeautyMountainsPersonalUse.ttf")
+}
+
+@font-face {
+    font-family: BiteChocolate;
+    src: url("/css/fonts/BiteChocolate.ttf")
+}
+
+@font-face {
+    font-family: Calligraphy;
+    src: url("/css/fonts/Calligraphy-D4.ttf")
+}
+
+@font-face {
+    font-family: CalligraphyWet;
+    src: url("/css/fonts/CalligraphyWet.ttf")
+}
+
+@font-face {
+    font-family: LemonJelly;
+    src: url("/css/fonts/LemonJellyPersonalUse.ttf")
+}
+
+@font-face {
+    font-family: QuickKiss;
+    src: url("/css/fonts/QuickKissPersonalUse.ttf")
+}
+
+@font-face {
+    font-family: Tomatoes;
+    src: url("/css/fonts/Tomatoes-O8L8.ttf.ttf")
+}
+
+/* ---- */
+@font-face {
+    font-family: VeganStyle;
+    src: url("/css/fonts/VeganStylePersonalUse.ttf")
+}
+
+@font-face {
+    font-family: Phamelo;
+    src: url("/css/fonts/ThePhameloDEMO.ttf")
+}
+
+@font-face {
+    font-family: PlayFair;
+    src: url("/css/fonts/PlayfairDisplay-Regular.ttf")
+}
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(177, 132, 188, 1);
+    overflow-y: auto;    
+    font-family: "Caligraphy", Arial, sans-serif;
+    font-size: 1.125rem;
+}
+
+#header {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7vw;  
+    background-color: rgba(235, 218, 240, 0.2);}
+
+#header > #company-logo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 60vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header-title {
+    display: inline-block;
+    font-family: "Phamelo", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 3.5vw;
+    color: white;
+}
+
+#header-img {
+    height: 4.5vw;
+    display: inline-block;
+    vertical-align: middle;}
+
+#header > #nav-bar {
+    display: grid;
+    width: 40vw;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.list-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;;
+    list-style: none;
+    font-family: "Phamelo", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration-line: underline;
+    color: violet;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6;
+    }
+  }
+
+#container {
+    width: 80%;
+    margin: 3.125rem auto 0 auto;
+    background-color: rgba(214, 185, 222, 1);
+    border-radius: 1vw;
+}
+
+
+#title {
+    display: block;
+    padding-top: 5rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title-text {
+    text-align: center;
+    font-family: "BiteChocolate", Arial, sans-serif;
+}
+
+#characters-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+}
+
+.commedia-characters {
+    max-width: 100%;
+}
+
+.text-container {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+}
+
+.char {
+    font-family: "LemonJelly", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 10vw;
+    color: white;
+}
+
+.commedia-characters-background1 {
+    background-color: blueviolet;
+    position: relative;
+    display: inline-block;
+}
+
+.commedia-characters-background2 {
+    background-color: indigo;
+    position: relative;
+    display: inline-block;
+}
+
+#more-text {
+    font-family: "LemonJelly", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 7vw;
+    color: white;
+    text-align: center;
+}
+
+#commedia-show {
+    margin-top: 10rem;
+}
+
+.videos {
+    display: block;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35vw;
+    width: 100%;
+}
+
+#products-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+    height: 40vw;
+}
+
+#capitano-mask, #set-mask {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#capitano-link, #set-link {
+    position: absolute;
+}
+
+#capitano-link:hover, #set-link:hover {
+    filter: brightness(0.3);
+}
+
+#capitano-img, #set-img {
+    max-width: 100%;
+}
+
+#single-container, #set-container {
+    position: absolute;
+    z-index: 998;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+#single-text, #set-text {
+    z-index: 999;
+    font-family: "Lobster", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 4vw;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+#form-container {
+    display: block;
+    height: auto;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 4vw;
+    font-family: "Phamelo", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 3.5vw;
+    color: black;
+}
+
+#form {
+    display: grid;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    height: 1.3rem;
+    margin-bottom: 0.5vw;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.3rem;
+    background: darkviolet;
+    color: inherit;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-family: "PlayFair", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 2vw;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    background-color: aliceblue;
+    left: 0; right: 0;
+    margin-top: 7vw;
+}
+
+::placeholder {
+    padding-left: 1vw;
+}
+
+small {
+    font-size: 1.5rem;
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 360px) {
+    #title {
+        padding-top: 2rem;
+    }
+
+    #characters-container {
+        margin-top: 5rem;
+    }
+
+    #commedia-show {
+        margin-top: 3rem;
+    }
+
+    #products-container {
+        margin-top: 5rem;
+    }
+}
